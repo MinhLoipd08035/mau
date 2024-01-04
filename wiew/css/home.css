@@ -1,0 +1,133 @@
+/* CSS cơ bản cho container và box sản phẩm */
+.containersanpham {
+    margin: 0 auto;
+    width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.boxsp {
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 20%; /* Điều chỉnh độ rộng của box sản phẩm dựa trên kích thước màn hình */
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.boxsp img {
+    width: 100%;
+    height: auto;
+}
+
+/* CSS for screens up to 470px */
+@media screen and (max-width: 470px) {
+    .containersanpham {
+        width: auto;
+    }
+    .boxsp {
+        width: 48%; /* Display 2 products per row on screens with width up to 470px */
+    }
+    .containersanpham {
+        flex-direction: row; /* Display vertically on small screens */
+    }
+}
+.boxsp span{
+    margin-right: 20px;
+}
+.boxsp p{
+    margin-bottom: 5px;
+}
+.boxsp a {
+    text-decoration: none;
+    color: #0048ff; /* Màu chữ xanh dương */
+    font-weight: bold;
+    font-size: 15px; /* Cỡ chữ */
+    text-transform: uppercase; /* Chuyển đổi thành chữ hoa */
+}
+
+.boxsp a:hover {
+    color: #FF4500; /* Màu chữ cam khi di chuột qua */
+    /* text-decoration: underline; Gạch chân khi di chuột qua */
+}
+/* CSS for screens between 470px and 770px */
+@media screen and (min-width: 471px) and (max-width: 770px) {
+    .containersanpham {
+        width: auto;
+    }
+    .boxsp {
+        width: 33.3%; /* Display 3 products per row on screens with width between 471px and 770px */
+    }
+    .containersanpham {
+        flex-direction: row; /* Display horizontally on medium screens */
+    }
+}
+/* CSS cho danh sách các loại sản phẩm */
+/* CSS cho thanh menu */
+.memu {
+    list-style: none; /* Loại bỏ dấu chấm trước danh sách */
+    padding: 0; /* Loại bỏ padding mặc định của danh sách */
+    display: flex; /* Hiển thị các mục menu cạnh nhau */
+    justify-content: space-between; /* Các mục menu căn giữa và cách nhau đều */
+    background-color: #fffefe; /* Màu nền của menu */
+}
+
+/* CSS cho mỗi mục menu */
+/* CSS cho mục menu */
+.memu li {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 900;
+    transition: background-color 0.3s ease; /* Thêm hiệu ứng chuyển đổi màu nền */
+}
+
+/* CSS cho liên kết trong menu */
+.memu a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+}
+
+/* CSS cho hiệu ứng hover */
+.memu li:hover {
+    background-color: #ff6600; /* Màu nền khi hover */
+    color: #ffffff; /* Màu chữ khi hover */
+}
+
+
+/* CSS cho biểu tượng (font awesome) trong menu */
+.memu i {
+    margin-right: 5px; /* Khoảng cách giữa biểu tượng và văn bản */
+}
+/* Existing CSS code */
+
+/* Add this CSS for the shopping cart icon */
+.boxsp {
+    position: relative; /* Add relative positioning to the box */
+}
+.themvaogiohang {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FF711B; 
+    color: white;
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%; 
+    justify-content: center;
+    align-items: center;
+    font-size: 25px; 
+    border: none;
+}
+.themvaogiohang:hover {
+    background-color: #ffffff; /* Màu nền thay đổi khi hover */
+}
+.cuoih2{
+    width: 1400px;
+    margin: 0 auto;
+    margin-top: 20px;
+}

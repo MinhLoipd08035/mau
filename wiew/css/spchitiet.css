@@ -1,0 +1,119 @@
+.chitietsp{
+    display: flex;
+    width: 1300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.motasp{
+  width: 1300px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.hinhsp{
+    position: relative;
+    width: 58%;
+    margin-right: 10px;
+
+  }
+  .dathang{
+   width: 42%;
+  }
+  .dathang p{
+     font-size: 25px;
+     margin-top: 15px;
+   }
+   .dathang span{
+    padding: 10px;
+    margin-right: 20px;
+   }
+   .dathang del{
+    font-size: 16px;
+   }
+  .dathang hr {
+    border: none;
+    border-top: 2px solid #333; /* Màu sắc của đường kẻ và chiều rộng */
+    margin: 20px 0; /* Khoảng cách top và bottom */
+  }
+  .dathang h4 {
+    font-size: 18px; /* Kích thước font chữ */
+    color: #333; /* Màu sắc của văn bản */
+    font-weight: bold; /* Độ đậm của font chữ */
+    text-align: left; /* Canh giữa nội dung văn bản */
+    text-transform: uppercase; /* Chuyển đổi văn bản thành chữ hoa */
+    margin: 10px 0; /* Khoảng cách top và bottom */
+  }
+  .cauhinh {
+    border: 2px dashed #ffc107; /* Đường viền đứt màu vàng nhạt */
+    padding: 10px; /* Khoảng cách giữa nội dung và đường viền */
+    background: #FFFEE1;
+    margin-top: 10px;
+    padding: 8px;
+    
+  }
+  .soluong {
+    margin-top: 20px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    width: 60px; /* Điều chỉnh chiều rộng của ô input */
+  }
+  
+ .soluong input[type="number"] {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 5px;
+    padding: 10px;
+    margin-right: 25px;
+  }
+  
+  .decrement,
+  .increment {
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    user-select: none; /* Ngăn chọn văn bản trong dấu trừ và cộng */
+  }
+  
+  .decrement:hover,
+  .increment:hover {
+    background-color: #f8a100;
+  }
+ .dathang .submit-button {
+    width: 100%;
+    margin-top: 15px;
+    background-color: #ED1C24; /* Màu nền màu vàng nhạt */
+    color: #fff; /* Màu chữ trắng */
+    text-align: center; /* Căn giữa văn bản */
+    padding: 10px 20px; /* Khoảng cách giữa chữ và viền của nút */
+    border: none; /* Loại bỏ viền */
+    cursor: pointer; /* Biến con trỏ thành dấu tay khi di chuột vào */
+  }
+  .image-container {
+    display: flex; /* Sử dụng flexbox để căn giữa theo chiều ngang và dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    height: 100%; /* Đảm bảo `.image-container` có chiều cao 100% của `.slide` */
+}
+.splienquan {
+  margin: 0 auto;
+  width: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.tensp {
+  width: 1300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: #FF711B; /* Màu nền */
+  padding: 10px; /* Khoảng cách lề xung quanh nội dung */
+  border: 1px solid #f10000; /* Đường viền */
+  border-radius: 5px; /* Góc bo tròn cho viền */
+  font-size: 18px; /* Kích thước chữ */
+  text-align: center; /* Căn giữa nội dung ngang */
+  color: #000000;
+}

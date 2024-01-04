@@ -1,0 +1,368 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(79, 81, 82);
+    background-color: #ffffff;
+}
+.navbar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+/*
+headeer top
+*/
+.topbar{
+  background-color: #212529;
+  padding: 0;
+}
+
+.topbar .container .row {
+  margin:-7px;
+  padding:0;
+}
+
+.topbar .container .row .col-md-12 { 
+  padding:0;
+}
+
+.topbar p{
+  margin:0;
+  display:inline-block;
+  font-size: 13px;
+  color: #f1f6ff;
+}
+
+.topbar p > i{
+  margin-right:5px;
+}
+.topbar p:last-child{
+  text-align:right;
+} 
+
+header .navbar {
+    margin-bottom: 0;
+}
+
+.topbar li.topbar {
+    display: inline;
+    padding-right: 18px;
+    line-height: 52px;
+    transition: all .3s linear;
+}
+
+.topbar li.topbar:hover {
+    color: #1bbde8;
+}
+
+.topbar ul.info i {
+    color: #131313;
+    font-style: normal;
+    margin-right: 8px;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
+
+.topbar ul.info li {
+    float: right;
+    padding-left: 30px;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 44px;
+}
+
+.topbar ul.info i span {
+    color: #aaa;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 50px;
+    padding-left: 18px;
+}
+
+ul.social-network {
+  border:none;
+  margin:0;
+  padding:0;
+}
+
+ul.social-network li {
+  border:none;  
+  margin:0;
+}
+
+ul.social-network li i {
+  margin:0;
+}
+
+ul.social-network li {
+    display:inline;
+    margin: 0 5px;
+    border: 0px solid #2D2D2D;
+    padding: 5px 0 0;
+    width: 32px;
+    display: inline-block;
+    text-align: center;
+    height: 32px;
+    vertical-align: baseline;
+    color: #000;
+}
+
+ul.social-network {
+  list-style: none;
+  margin: 5px 0 10px -25px;
+  float: right;
+}
+
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    will-change: opacity, transform;
+    transition: .3s ease-out;
+    color: #fff;
+}
+a {
+  color: #0a0a0a;
+  text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+.bg-image-full {
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.bg-dark {
+    background-color: #222!important;
+}
+
+.mx-background-top-linear {
+    background: -webkit-linear-gradient(45deg, #FF711B 40%, #1b1e21 40%);
+    background: -webkit-linear-gradient(left, #FF711B 40%, #1b1e21 40%);
+    background: linear-gradient(45deg, #FF711B 40%, #1b1e21 40%);
+}
+/* slide show */
+* {
+  box-sizing: border-box;
+}
+.containerslide{
+  position: relative;
+  width: 1400px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+/* Đảm bảo trang web có thể co giãn và phản ánh trên các thiết bị khác nhau */
+@media screen and (max-width: 768px) {
+  .containerslide {
+    width: 100%;
+    margin-top: 0;
+  }
+  
+  .mySlides {
+    display: block;
+  }
+  
+  /* Điều chỉnh kích thước và vị trí của nút prev và next cho thiết bị nhỏ hơn */
+}
+
+/* Điều chỉnh kích thước và độ rộng của các hình ảnh thumbnail cho thiết bị nhỏ hơn */
+@media screen and (max-width: 480px) {
+  .column {
+    width: 33.33%;
+  }
+  .prev,
+.next {
+  width: 20px;
+  padding: 5px;
+}
+}
+
+/* Điều chỉnh font-size cho caption text cho thiết bị nhỏ hơn */
+@media screen and (max-width: 360px) {
+  .numbertext {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+  
+  .caption-container {
+    padding: 1px 8px;
+  }
+}
+.search {
+  display: inline-block;
+  position: relative;
+  margin: 0px 10px 0px 10px;
+  right: 190px;
+}
+
+.search input[type="text"] {
+  width: 200px;
+  padding: 6px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search input[type="submit"] {
+  background-color: #FF711B;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: .9s ease;
+}
+
+.search input[type="submit"]:hover {
+  transform: scale(1.1);
+  color: rgb(255, 255, 255);
+  background-color: rgb(197, 118, 1);
+}
+.link_kachhang {
+  color: #ffffff; /* Màu chữ cho các liên kết */
+  text-decoration: none; /* Loại bỏ gạch chân mặc định trên liên kết */
+  margin-right: 10px; /* Khoảng cách bên phải giữa các liên kết */
+}
+.xinchao{
+  text-align: center;
+  color: red;
+  padding: 8px;
+
+}
+.sua_taikhoan{
+  color: rgb(255, 255, 255);
+  padding: 8px;
+}
+.thoat_taikhoan{
+  color: rgb(255, 255, 255);
+  padding: 8px;
+}
+.round-image {
+  width: 40px; /* Điều chỉnh kích thước bên trong */
+  height: 40px; /* Điều chỉnh kích thước bên trong */
+  border-radius: 50%; /* Tạo hình tròn */
+  object-fit: cover; /* Đảm bảo hình ảnh bị cắt để vừa trong hình tròn */
+}
+.vaoquantri{
+  color: rgb(255, 255, 255);
+  padding: 8px;
+}
+.binhluan{
+  margin-top: 20px;
+}
+#binh_luan{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
